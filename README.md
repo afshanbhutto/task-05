@@ -1,8 +1,8 @@
-# React Shopping Cart
+# Redux-core Shopping Cart
 
 ### [Demo Link](https://react-shopping-cart-project.netlify.app/) 🔗
 
-**Shopping Cart Project** built with **React JS**, using **Context API** & **useReducer Hook**.
+**Shopping Cart Project** built with **React JS + Redux-core**.
 
 <br/>
 
@@ -17,6 +17,7 @@
 ## Technologies used:
 
 - #### **React JS**
+- #### **Redux-core**
 - #### **SASS**
 
 <br/>
