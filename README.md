@@ -1,9 +1,8 @@
 # Redux-core Shopping Cart
 
-### [Demo Link](https://react-shopping-cart-project.netlify.app/) 🔗
+### [Demo Link](https://redux-core-shopping-cart.netlify.app/) 🔗
 
 **Shopping Cart Project** built with **React JS + Redux-core**.
-
 <br/>
 
 ## Features:
