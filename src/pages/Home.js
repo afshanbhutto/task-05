@@ -7,6 +7,8 @@ const Home = () => {
         <>
             <section id="home">
                 <div className="container">
+                    <div className='products_heading'><h4>AVAILABLE <span>ITEMS</span></h4></div>
+                    
                     <div className="home_content">
                         {
                             productsData.map((item) => (

@@ -10,10 +10,10 @@ const Header = () => {
 
     return (
         <>
-            <header id="header">
+            <header id="header" >
                 <div className="container">
                     <div className="navbar">
-                        <h4>Redux-core Shopping Cart</h4>
+                        <h4>NC Cart</h4>
                         <div className="nav_menu">
                             <div
                                 title="Cart"
@@ -21,6 +21,7 @@ const Header = () => {
                                 onClick={() => dispatch(toggleCart(true))}
                             >
                                 <img src="/images/bag-icon.svg" alt="bag-icon" />
+                                <span><p>Cart</p></span>
                                 {cart.length ? <span className="badge">{cart.length}</span> : null}
                             </div>
                         </div>

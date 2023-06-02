@@ -80,7 +80,7 @@ const Cart = () => {
                         <div className="cart_foot">
                             <h3>
                                 <small>Total:</small>
-                                <b>₹ {cartTotal.toLocaleString()}</b>
+                                <b>$ {cartTotal.toLocaleString()}</b>
                             </h3>
 
                             <button

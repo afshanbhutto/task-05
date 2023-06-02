@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*--====== Variables ======--*/
 $main-font: 'Roboto', sans-serif;
-$body-color: #13131f;
+$body-color: black;
 $text-color: #a9afc3;
 $text-light: #6c757d;
 $primary-color: #191c26;
@@ -119,7 +122,13 @@ svg {
     padding-right: 0.75rem;
 }
 
-#header,
+#header{
+    background-color: #da0037;
+    color: white;
+    font-size: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
 #footer,
 .cart_head,
 .cart_foot {
@@ -129,12 +138,17 @@ svg {
 
 /*--====== Header Section ======--*/
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    display: flex;
+    place-items: center;
+    position: static;
+    align-items: center;
+    justify-items: center;
+    width: 78%;
+    margin: 2rem auto;
+    margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-bottom: 2rem
 }
 
 .navbar {
@@ -144,6 +158,8 @@ svg {
 .cart_icon {
     position: relative;
     cursor: pointer;
+    display: flex;
+    gap: 4px;
 
     .badge {
         display: inline-block;
@@ -151,15 +167,28 @@ svg {
         color: #fff;
         line-height: 1;
         font-size: 0.8rem;
-        padding: 0.35rem 0.55rem;
-        border-radius: 50%;
+        padding: 0.25rem 0.55rem;
+        border-radius: 10%;
     }
 }
 
 
 /*--====== Home / Products Section ======--*/
 #home {
-    padding: 6rem 0 4rem;
+    padding: 3rem 0 4rem;
+}
+
+.products_heading{
+    font-size: 2rem;
+    display: flex;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    span{
+      color: #da0037;  
+    }
 }
 
 .home_content {
@@ -178,17 +207,14 @@ svg {
     padding-top: 1rem;
     box-shadow: $card-shadow;
     overflow: hidden;
+    border-radius: 1rem;
 
     img {
         width: 50%;
         max-width: 200px;
     }
 
-    .rating {
-        color: sandybrown;
-        font-size: 0.8rem;
-        letter-spacing: 1.2px;
-    }
+    
 
     .title {
         font-size: 1.1rem;
@@ -197,10 +223,12 @@ svg {
 
     .price {
         font-weight: bold;
+        color: #da0037;
     }
 
     .btn {
-        background-color: $primary-color;
+        background-color: #da0037;
+        color: white;
         width: 100%;
         margin-top: 1rem;
         padding: 0.6rem 0;
